@@ -1,57 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Trabajo en Talca</title>
 
-<meta http-equiv="refresh" content="0; url=https://docs.google.com/spreadsheets/d/1atsKK_17uLUYZoBiAbxkDasK6j-30swHSeZahSDvlu8/edit?usp=sharing">
-
-<script>
-window.location.replace("https://docs.google.com/spreadsheets/d/1atsKK_17uLUYZoBiAbxkDasK6j-30swHSeZahSDvlu8/edit?usp=sharing");
+<!-- Cloudflare Web Analytics -->
+<script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token":"c50fdff44c944c90973e395d69cd3c2e"}'>
 </script>
+<!-- End Cloudflare Web Analytics -->
 
 <style>
+
 body{
     margin:0;
+    background:#f5f7fa;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
-    background:#f7f7f7;
     font-family:Arial,Helvetica,sans-serif;
 }
+
 .card{
-    text-align:center;
+
     background:white;
     padding:40px;
-    border-radius:15px;
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    border-radius:18px;
+    box-shadow:0 15px 45px rgba(0,0,0,.12);
+    text-align:center;
+    max-width:420px;
+
 }
+
 h1{
-    color:#0f5bd3;
+
+    color:#005BBB;
+    margin-bottom:10px;
+
 }
-a{
-    color:#0f5bd3;
-    text-decoration:none;
-    font-weight:bold;
+
+p{
+
+    color:#555;
+    font-size:17px;
+
 }
+
+.loader{
+
+    width:55px;
+    height:55px;
+    border:6px solid #ddd;
+    border-top:6px solid #005BBB;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:30px auto;
+
+}
+
+@keyframes spin{
+
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+
+}
+
 </style>
+
+<script>
+
+setTimeout(function(){
+
+window.location.href="https://docs.google.com/spreadsheets/d/1atsKK_17uLUYZoBiAbxkDasK6j-30swHSeZahSDvlu8/edit?usp=sharing";
+
+},1000);
+
+</script>
 
 </head>
 
 <body>
 
 <div class="card">
+
 <h1>Trabajo en Talca</h1>
-<p>Redirigiendo a las ofertas laborales...</p>
 
-<p>Si la redirección no funciona automáticamente:</p>
+<p>Estamos cargando las ofertas laborales...</p>
 
-<a href="https://docs.google.com/spreadsheets/d/1atsKK_17uLUYZoBiAbxkDasK6j-30swHSeZahSDvlu8/edit?usp=sharing">
-Haz clic aquí
-</a>
+<div class="loader"></div>
+
+<p>Serás redirigido automáticamente.</p>
 
 </div>
 
